@@ -1,7 +1,7 @@
 import React from "react";
 
-const Main = () => {
+const Toggle = () => {
   return null;
 };
 
-export default Main;
+export default Toggle;

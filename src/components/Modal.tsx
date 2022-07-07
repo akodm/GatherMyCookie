@@ -1,7 +1,7 @@
 import React from "react";
 
-const Main = () => {
+const Modal = () => {
   return null;
 };
 
-export default Main;
+export default Modal;

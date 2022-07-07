@@ -56,9 +56,14 @@
     /* Experimental Options */
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
-    // "baseUrl": ".",
-    // "paths": {
-    // },
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*.tsx"],
+      "@consts/*": ["./src/consts/*.ts"],
+      "@hooks/*": ["./src/hooks/*.ts"],
+      "@pages/*": ["./src/pages/*.tsx"],
+      "@store": ["./src/Store.ts"],
+    },
   },
   "include": [
     "./src/**/*"

@@ -1,7 +1,7 @@
 import create from "zustand";
 
-const InitialState: State.InitialState = {};
+const InitialState: NState.IInitialState = {};
 
-const useStore = create<State.InitialState>(() => InitialState);
+const useStore = create<NState.IInitialState>(() => InitialState);
 
 export default useStore;
