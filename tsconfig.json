@@ -61,6 +61,7 @@
       "@components/*": ["./src/components/*.tsx"],
       "@consts/*": ["./src/consts/*.ts"],
       "@hooks/*": ["./src/hooks/*.ts"],
+      "@modules": ["./src/modules/*.ts"],
       "@pages/*": ["./src/pages/*.tsx"],
       "@store": ["./src/Store.ts"],
     },

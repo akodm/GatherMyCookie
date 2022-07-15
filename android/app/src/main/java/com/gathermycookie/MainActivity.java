@@ -11,7 +11,16 @@ public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle saveInstanceState) {
     SplashScreen.show(this);
-    super.onCreate(savedInstanceState);
+    super.onCreate(null);
+    hideNavigationBar();
+  }
+
+  @Override
+  public void onWindowFocusChanged(boolean hasFocus) {
+    super.onWindowFocusChanged(hasFocus);
+    if (hasFocus) {
+      hideNavigationBar();
+    }
   }
 
   /**
@@ -44,5 +53,9 @@ public class MainActivity extends ReactActivity {
       reactRootView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
       return reactRootView;
     }
+  }
+
+  private void hideNavigationBar() {
+    getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
   }
 }

@@ -18,6 +18,7 @@ module.exports = {
           "@components": "./src/components",
           "@consts": "./src/consts",
           "@hooks": "./src/hooks",
+          "@modules": "./src/modules",
           "@pages": "./src/pages",
           "@store": "./src/Store.ts",
         }
